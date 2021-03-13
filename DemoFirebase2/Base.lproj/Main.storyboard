@@ -12,7 +12,7 @@
         <scene sceneID="lxT-gM-NoJ">
             <objects>
                 <viewController id="elg-cr-h8S" customClass="ViewController" customModule="DemoFirebase2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iwx-2q-sgj">
+                    <view key="view" contentMode="scaleToFill" id="iwx-2q-sgj" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -67,7 +67,6 @@
                                                 <state key="normal" title="Login"/>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="elg-cr-h8S" eventType="touchUpInside" id="cLe-as-QnS"/>
-                                                    <segue destination="dfV-UH-Kcg" kind="show" identifier="tasksSegue" id="ArB-v8-I1Z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wO-wS-Egv">
@@ -109,6 +108,7 @@
                         <outlet property="emailTF" destination="hgR-H3-ZgV" id="UY6-A3-Vus"/>
                         <outlet property="passwordTF" destination="rv2-k7-lMk" id="Woj-V9-n1G"/>
                         <outlet property="warnLabel" destination="Dlf-Rk-TCS" id="IJ1-Hb-MHB"/>
+                        <segue destination="dfV-UH-Kcg" kind="show" identifier="tasksSegue" id="Mu1-1c-IKB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRW-T6-zRk" sceneMemberID="firstResponder"/>
@@ -126,7 +126,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RT8-oU-oMc">
                                 <rect key="frame" x="0.0" y="56" width="375" height="591"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="kOw-Qg-T0e">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="identifierCell" id="kOw-Qg-T0e">
                                         <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kOw-Qg-T0e" id="aNJ-dY-KV3">
@@ -152,6 +152,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="Of1-zQ-Z8m">
+                        <barButtonItem key="leftBarButtonItem" title="Sing Out" id="jkJ-zo-cHS">
+                            <connections>
+                                <action selector="singOutTapped:" destination="6Nb-VK-rXO" id="8Yx-Is-YZ7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="czg-oS-yzN">
                             <connections>
                                 <action selector="addTapped:" destination="6Nb-VK-rXO" id="qnL-KX-I2E"/>
@@ -183,7 +188,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Stu-k1-WeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653.60000000000002" y="74.212893553223395"/>
+            <point key="canvasLocation" x="844" y="74"/>
         </scene>
     </scenes>
     <resources>

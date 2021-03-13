@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E461FFB25FCE11900A32E0F /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E461FFA25FCE11900A32E0F /* Tasks.swift */; };
+		3E461FFE25FCE12300A32E0F /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E461FFD25FCE12300A32E0F /* Users.swift */; };
 		3E5DDE3525FCB36600648D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DDE3425FCB36600648D64 /* AppDelegate.swift */; };
 		3E5DDE3725FCB36600648D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DDE3625FCB36600648D64 /* SceneDelegate.swift */; };
 		3E5DDE3925FCB36600648D64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DDE3825FCB36600648D64 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		062AF11E8ABA2BF3DC020EA0 /* Pods_DemoFirebase2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoFirebase2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E461FFA25FCE11900A32E0F /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		3E461FFD25FCE12300A32E0F /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		3E5DDE3125FCB36600648D64 /* DemoFirebase2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoFirebase2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5DDE3425FCB36600648D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E5DDE3625FCB36600648D64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				3E5DDE3625FCB36600648D64 /* SceneDelegate.swift */,
 				3E5DDE3825FCB36600648D64 /* ViewController.swift */,
 				3E5DDE4A25FCB3DB00648D64 /* TasksViewController.swift */,
+				3E461FFA25FCE11900A32E0F /* Tasks.swift */,
+				3E461FFD25FCE12300A32E0F /* Users.swift */,
 				3E5DDE3A25FCB36600648D64 /* Main.storyboard */,
 				3E5DDE3D25FCB36800648D64 /* Assets.xcassets */,
 				3E5DDE3F25FCB36800648D64 /* LaunchScreen.storyboard */,
@@ -86,7 +92,6 @@
 				A16D2F75221148E7341075FA /* Pods-DemoFirebase2.debug.xcconfig */,
 				F1DF24C3FF76004674ACD118 /* Pods-DemoFirebase2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,6 +115,7 @@
 				3E5DDE2E25FCB36600648D64 /* Frameworks */,
 				3E5DDE2F25FCB36600648D64 /* Resources */,
 				F745D2757E53B9A840C60420 /* [CP] Embed Pods Frameworks */,
+				25F71E8A076E56A075A67F1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,6 +173,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		25F71E8A076E56A075A67F1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoFirebase2/Pods-DemoFirebase2-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoFirebase2/Pods-DemoFirebase2-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoFirebase2/Pods-DemoFirebase2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9B31FCE6374DD56A90CC779C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +239,8 @@
 				3E5DDE3925FCB36600648D64 /* ViewController.swift in Sources */,
 				3E5DDE4B25FCB3DB00648D64 /* TasksViewController.swift in Sources */,
 				3E5DDE3525FCB36600648D64 /* AppDelegate.swift in Sources */,
+				3E461FFB25FCE11900A32E0F /* Tasks.swift in Sources */,
+				3E461FFE25FCE12300A32E0F /* Users.swift in Sources */,
 				3E5DDE3725FCB36600648D64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
